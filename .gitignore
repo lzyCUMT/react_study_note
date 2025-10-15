@@ -35,3 +35,12 @@ src/reportWebVitals.js
 src/setupTests.json
 
 .history
+pdas/package-lock.json
+pdas/package.json
+pdas/README.md
+pdas/public/favicon.ico
+pdas/public/index.html
+pdas/public/logo192.png
+pdas/public/logo512.png
+pdas/public/manifest.json
+pdas/public/robots.txt
