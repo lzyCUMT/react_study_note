@@ -44,3 +44,15 @@ pdas/public/logo192.png
 pdas/public/logo512.png
 pdas/public/manifest.json
 pdas/public/robots.txt
+animals/package-lock.json
+animals/package.json
+animals/README.md
+animals/public/favicon.ico
+animals/public/index.html
+animals/public/logo192.png
+animals/public/logo512.png
+animals/public/manifest.json
+animals/public/robots.txt
+pdas/src/images/alexa.png
+pdas/src/images/cortana.png
+pdas/src/images/siri.png
