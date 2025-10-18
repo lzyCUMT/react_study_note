@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
+import searchImages from "./api";
 
-const el = document.getElementById("root");
-const root = ReactDOM.createRoot(el);
-
+const root = createRoot(document.getElementById("root"));
 root.render(<App />);
