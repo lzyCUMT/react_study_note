@@ -8,6 +8,7 @@ function Button({
   danger,
   outline,
   rounded,
+  ...rest
 }) {
   const classes = className("px-3 py-1.5 border ", {
     "border-blue-500 bg-blue-500 text-white": primary,
@@ -23,24 +24,28 @@ function Button({
     "text-yellow-400": outline && warning,
     "text-red-500": outline && danger,
   });
-  return <button className={classes}>{children}</button>;
+  return (
+    <button {...rest} className={classes}>
+      {children}
+    </button>
+  );
 }
 
-Button.propType = {
-  checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
-    const count =
-      Number(!!primary) +
-      Number(!!secondary) +
-      Number(!!success) +
-      Number(!!warning) +
-      Number(!!danger);
+// Button.propType = {
+//   checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
+//     const count =
+//       Number(!!primary) +
+//       Number(!!secondary) +
+//       Number(!!success) +
+//       Number(!!warning) +
+//       Number(!!danger);
 
-    if (count > 1) {
-      return new Error(
-        "Only one of primary, secondary, success, warning, danger can be true"
-      );
-    }
-  },
-};
+//     if (count > 1) {
+//       return new Error(
+//         "Only one of primary, secondary, success, warning, danger can be true"
+//       );
+//     }
+//   },
+// };
 
 export default Button;
