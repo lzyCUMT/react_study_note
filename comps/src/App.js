@@ -1,23 +1,7 @@
-import { GoBell } from "react-icons/go";
-import Button from "./components/Button";
+import Accordion from "./components";
 function App() {
-  return (
-    <div>
-      <div>
-        <Button>Click here!</Button>
-        <GoBell />
-      </div>
-      <div>
-        <Button>Click here!</Button>
-      </div>
-      <div>
-        <Button>Click here!</Button>
-      </div>
-      <div>
-        <Button>Click here!</Button>
-      </div>
-    </div>
-  );
+  const items = [{}, {}, {}];
+  return <Accordion items={items} />;
 }
 
 export default App;
