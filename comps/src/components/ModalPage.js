@@ -21,18 +21,18 @@ function ModalPage() {
   );
 
   const modal = (
-    <Modal onClose={handleClose} actionBar={actionBar}>
+    <div onClose={handleClose} actionBar={actionBar}>
       <p>Here is an important agreement for you to accept</p>
-    </Modal>
+    </div>
   );
 
   return (
-    <div className="relative">
+    <Modal className="relative">
       <Button onClick={handleClick} primary>
         Open Modal
       </Button>
       {showModal && modal}
-    </div>
+    </Modal>
   );
 }
 
