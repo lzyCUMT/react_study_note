@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "react_study_note",
+		"path": "../../.."
+	}
+],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
+}
